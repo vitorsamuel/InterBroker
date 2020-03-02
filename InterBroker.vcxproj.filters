@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="xmlprocessor">
+      <UniqueIdentifier>{354ac5b6-43d1-4302-8fa9-302a08e1159d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tcp">
+      <UniqueIdentifier>{a68bbef0-a6c2-4c90-a6e4-b4856fa0dc44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{3588379c-8ae7-463a-aa18-62cb97095d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database\metadata">
+      <UniqueIdentifier>{dd44fd2b-8dfb-4c22-9277-81d28adc7406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database\operations">
+      <UniqueIdentifier>{dff066b2-cb16-4c41-9b1d-3df9c2eac506}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tcp\listener.c">
+      <Filter>tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="tcp\server.c">
+      <Filter>tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="process.cpp">
+      <Filter>xmlprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="database\server_version.c">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="database\lib_version.c">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="database\metadata\column_headers.c">
+      <Filter>database\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="database\operations\create_table.c">
+      <Filter>database\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="database\operations\list_tables.c">
+      <Filter>database\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="database\operations\multiple_rows.c">
+      <Filter>database\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="database\operations\prepared_statement.c">
+      <Filter>database\operations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tcp\listener.h">
+      <Filter>tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp\server.h">
+      <Filter>tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlprocessor\rapidxml.hpp">
+      <Filter>xmlprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlprocessor\rapidxml_iterators.hpp">
+      <Filter>xmlprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlprocessor\rapidxml_print.hpp">
+      <Filter>xmlprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlprocessor\rapidxml_utils.hpp">
+      <Filter>xmlprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="database\lib_version.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="database\server_version.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="database\metadata\column_headers.h">
+      <Filter>database\metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="database\operations\create_table.h">
+      <Filter>database\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="database\operations\list_tables.h">
+      <Filter>database\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="database\operations\multiple_rows.h">
+      <Filter>database\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="database\operations\prepared_statement.h">
+      <Filter>database\operations</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
